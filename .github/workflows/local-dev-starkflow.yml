@@ -25,8 +25,8 @@ jobs:
         id: stark
         uses: stark-contrast/accessibility-check-action@0.3.2-beta.0
         env:
-          STARK_REPORT_URL: https://ty.ngrok.io/api/cli-webhooks/scan-result/:scanId
-          STARK_COMPLETION_URL: https://ty.ngrok.io/api/cli-webhooks/end-scan/:scanId
+          STARK_REPORT_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/scan-result/:scanId
+          STARK_COMPLETION_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/end-scan/:scanId
         with:
           # Most of the following values are simply shell commands. You can use these to set up the container as needed for your app
           token: ${{ github.event.inputs.token }} # The action will use this to send an audit report back to Stark.
