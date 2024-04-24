@@ -8,10 +8,6 @@ parameters:
   displayName: Stark Token (provided by Stark)
   default: noValue
   type: string
-- name: display-title
-  displayName: Display Title (to identify execution)
-  default: Title
-  type: string
 
 trigger:
 - none
@@ -23,7 +19,6 @@ steps:
 - script: |
     echo 'This is where we would install npm, get the accessibility-cli, etc.'
     echo 'token =' ${{ parameters.token }}
-    echo 'display-title =' ${{ parameters.display-title }}
   displayName: 'Set up Stark CLI'
 - script: |
     echo 'This is where we would run the accessibility-cli'
