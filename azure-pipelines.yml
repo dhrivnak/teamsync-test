@@ -3,14 +3,28 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+parameters:
+- name: token
+  displayName: Stark Token (provided by Stark)
+  default: noValue
+  type: string
+- name: display-title
+  displayName: Display Title (to identify execution)
+  default: Title
+  type: string
+
 trigger:
-- main
+- none
 
 pool:
   vmImage: ubuntu-latest
 
 steps:
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+    echo 'This is where we would install npm, get the accessibility-cli, etc.'
+    echo 'token = ${{ parameters.token }}'
+    echo 'display-title = ${{ parameters.display-title }}'
+  displayName: 'Set up Stark CLI'
+- script: |
+    echo 'This is where we would run the accessibility-cli'
+  displayName: "Run Stark CLI'
