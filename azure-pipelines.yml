@@ -6,7 +6,7 @@
 parameters:
 - name: token
   displayName: Stark Token (provided by Stark)
-  default: noValue
+  default: 
   type: string
 
 trigger:
