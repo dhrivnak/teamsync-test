@@ -22,4 +22,6 @@ steps:
   displayName: 'Set up Stark CLI'
 - script: |
     echo 'This is where we would run the accessibility-cli'
+    pwd
+    ls
   displayName: 'Run Stark CLI'
