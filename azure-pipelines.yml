@@ -22,8 +22,8 @@ pool:
 steps:
 - script: |
     echo 'This is where we would install npm, get the accessibility-cli, etc.'
-    echo 'token = ${{ parameters.token }}'
-    echo 'display-title = ${{ parameters.display-title }}'
+    echo 'token =' ${{ parameters.token }}
+    echo 'display-title =' ${{ parameters.display-title }}
   displayName: 'Set up Stark CLI'
 - script: |
     echo 'This is where we would run the accessibility-cli'
