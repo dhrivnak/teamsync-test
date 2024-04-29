@@ -17,10 +17,6 @@ pool:
 
 steps:
 - checkout: self
-- task: NodeTool@0
-  inputs:
-    versionSpec: '21.x'
-  displayName: 'Install Node.js'
 - task: StarkAccessibilityAudit@0
   inputs:
     token: ${{ parameters.token }}
