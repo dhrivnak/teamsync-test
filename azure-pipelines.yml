@@ -21,6 +21,7 @@ steps:
     versionSpec: '20.x'
   displayName: 'Install Node.js'
 - script node -v
+  displayName: Show node version
 - task: StarkAccessibilityAudit@0
   inputs:
     token: ${{ parameters.token }}
