@@ -19,6 +19,12 @@ steps:
 - task: Docker@2
   inputs:
     command: 'build'
-    Dockerfile: 'accessibility-audit/Dockerfile'
-    arguments: '${{ parameters.token }}'
+    Dockerfile: './accessibility-audit/Dockerfile'
+    arguments: '-t auditor-image'
     addPipelineData: false
+- task: Docker@2
+  inputs:
+    command: 'start'
+    arguments: '-it --rm'
+    addPipelineData: false
+    container: 'auditor-image'
