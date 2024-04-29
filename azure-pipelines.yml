@@ -14,9 +14,16 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+resources:
+  containers:
+    - container: auditor
+      image: ubuntu-latest
+
 steps:
 - checkout: self
-- script: 'node -v'
+  target: auditor
+- script: docker run
+  target: auditor
 - task: StarkAccessibilityAudit@0
   inputs:
     token: ${{ parameters.token }}
