@@ -20,8 +20,6 @@ steps:
     echo 'This is where we would install npm, get the accessibility-cli, etc.'
     echo 'token =' ${{ parameters.token }}
   displayName: 'Set up Stark CLI'
-- script: |
-    echo 'This is where we would run the accessibility-cli'
-    pwd
-    ls
-  displayName: 'Run Stark CLI'
+- task: stark-contrast.accessibility-audit@1
+  inputs:
+    token: 'token1234'
