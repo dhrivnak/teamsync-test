@@ -16,10 +16,7 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: |
-    echo 'This is where we would install npm, get the accessibility-cli, etc.'
-    echo 'token =' ${{ parameters.token }}
-  displayName: 'Set up Stark CLI'
+- checkout: self
 - task: StarkAccessibilityAudit@0
   inputs:
     token: 'asdf'
