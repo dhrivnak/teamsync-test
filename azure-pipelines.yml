@@ -14,16 +14,11 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-resources:
-  containers:
-    - container: auditor
-      image: ubuntu-latest
-
 steps:
 - checkout: self
-  target: auditor
-- script: docker run
-  target: auditor
-- task: StarkAccessibilityAudit@0
+- task: Docker@2
   inputs:
-    token: ${{ parameters.token }}
+    command: 'build'
+    Dockerfile: 'accessibility-audit/Dockerfile'
+    arguments: '${{ parameters.token }}'
+    addPipelineData: false
