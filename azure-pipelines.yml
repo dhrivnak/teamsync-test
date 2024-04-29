@@ -3,9 +3,11 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-variables:
+parameters:
 - name: token
-  value: <provided by Stark>
+  displayName: Stark token
+  type: string
+  default: undefined
 
 trigger:
 - none
@@ -17,4 +19,4 @@ steps:
 - checkout: self
 - task: StarkAccessibilityAudit@0
   inputs:
-    token: $(token)
+    token: ${{ parameters.token }}
