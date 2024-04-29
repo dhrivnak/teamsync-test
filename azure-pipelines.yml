@@ -16,10 +16,6 @@ pool:
 
 steps:
 - checkout: self
-- task: NodeTool@0
-  inputs:
-    versionSpec: '20.x'
-  displayName: 'Install Node.js'
 - script: 'node -v'
 - task: StarkAccessibilityAudit@0
   inputs:
