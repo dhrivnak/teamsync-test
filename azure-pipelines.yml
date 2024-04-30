@@ -7,7 +7,7 @@ parameters:
 - name: token
   displayName: Stark token
   type: string
-  default: ''
+  default: '\$\{\{ parameters.token \}\}'
 
 trigger:
 - none
@@ -19,12 +19,9 @@ steps:
 - script: |
     pwd
     ls
-    cd ..
+    cd ../../_tasks
     pwd
-    ls
-    cd ..
-    pwd
-    ls
+    ls -R
 - task: StarkAccessibilityAudit@0
   inputs:
     token: ${{ parameters.token }}
