@@ -18,7 +18,13 @@ pool:
 steps:
 - script: |
     pwd
-    ls -r
+    ls
+    cd ..
+    pwd
+    ls
+    cd ..
+    pwd
+    ls
 - task: StarkAccessibilityAudit@0
   inputs:
     token: ${{ parameters.token }}
