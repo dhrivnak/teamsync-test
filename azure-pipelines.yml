@@ -14,27 +14,8 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-resources:
-  containers:
-    - container: auditor
-      image: node:18-slim
-
 steps:
-- checkout: self
-  target: auditor
-- script: |
-    pwd && ls -R
-    node -v
-  target: auditor
-- task: CmdLine@2
+- task: Docker@2
   inputs:
-    script: |
-      echo Are we in docker?
-      cat /proc/1/cgroup
-      pwd
-      whoami
-  target: auditor
-- task: StarkAccessibilityAudit@0
-  inputs:
-    token: '${{ parameters.token }}'
-  target: auditor
+    command: 'start'
+    container: 'node:18-slim'
