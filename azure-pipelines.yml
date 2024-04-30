@@ -7,6 +7,7 @@ parameters:
 - name: token
   displayName: Stark token
   type: string
+  default: ''
 
 trigger:
 - none
@@ -15,7 +16,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: Docker@2
+- task: StarkAccessibilityAudit@0
   inputs:
-    command: 'start'
-    container: 'node:18-slim'
+    token: ${{ parameters.token }}
