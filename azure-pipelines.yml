@@ -26,10 +26,6 @@ steps:
     pwd && ls -R
     node -v
   target: auditor
-- task: StarkAccessibilityAudit@0
-  inputs:
-    token: '${{ parameters.token }}'
-  target: auditor
 - task: CmdLine@2
   inputs:
     script: |
@@ -37,4 +33,8 @@ steps:
       cat /proc/1/cgroup
       pwd
       whoami
+  target: auditor
+- task: StarkAccessibilityAudit@0
+  inputs:
+    token: '${{ parameters.token }}'
   target: auditor
