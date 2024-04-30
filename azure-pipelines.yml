@@ -24,10 +24,7 @@ steps:
   target: auditor
 - script: pwd && ls -R
   target: auditor
-- task: CmdLine@2
+- task: StarkAccessibilityAudit@0
   inputs:
-    script: |
-      echo Write your commands here
-      ls
-      echo Hello world
+    token: '${{ parameters.token }}'
   target: auditor
