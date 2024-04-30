@@ -19,6 +19,3 @@ steps:
 - task: StarkAccessibilityAudit@0
   inputs:
     token: ${{ parameters.token }}
-- script: |
-    pwd
-    ls
