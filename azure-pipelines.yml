@@ -7,7 +7,7 @@ parameters:
 - name: token
   displayName: Stark token
   type: string
-  default: '\$\{\{ parameters.token \}\}'
+  default: ''
 
 trigger:
 - none
