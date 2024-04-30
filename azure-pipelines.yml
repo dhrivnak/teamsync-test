@@ -14,17 +14,13 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+resources:
+  containers:
+    - container: auditor
+      image: node:18-slim
+
 steps:
 - checkout: self
-- task: Docker@2
-  inputs:
-    command: 'build'
-    Dockerfile: './accessibility-audit/Dockerfile'
-    arguments: '-t auditor-image'
-    addPipelineData: false
-- task: Docker@2
-  inputs:
-    command: 'start'
-    arguments: '-it --rm'
-    addPipelineData: false
-    container: 'auditor-image'
+  target: auditor
+- script: pwd && ls -R
+  target: auditor
