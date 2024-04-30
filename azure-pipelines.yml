@@ -30,3 +30,11 @@ steps:
   inputs:
     token: '${{ parameters.token }}'
   target: auditor
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Are we in docker?
+      cat /proc/1/cgroup
+      pwd
+      whoami
+  target: auditor
