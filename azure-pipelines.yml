@@ -24,3 +24,7 @@ steps:
   target: auditor
 - script: pwd && ls -R
   target: auditor
+- task: StarkAccessibilityAudit@0
+  inputs:
+    token: '${{ parameters.token }}'
+  target: auditor
