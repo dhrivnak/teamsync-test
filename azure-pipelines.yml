@@ -22,7 +22,9 @@ resources:
 steps:
 - checkout: self
   target: auditor
-- script: pwd && ls -R
+- script: |
+    pwd && ls -R
+    node -v
   target: auditor
 - task: StarkAccessibilityAudit@0
   inputs:
