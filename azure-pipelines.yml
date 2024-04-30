@@ -16,6 +16,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- script: |
+    pwd
+    ls -r
 - task: StarkAccessibilityAudit@0
   inputs:
     token: ${{ parameters.token }}
