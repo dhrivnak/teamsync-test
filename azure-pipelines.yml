@@ -18,4 +18,11 @@ pool:
 steps:
 - task: StarkAccessibilityAudit@0
   inputs:
-    token: ${{ parameters.token }}
+    token: '${{ parameters.token }}'
+    setup: 'npm i'
+    build: 'npm run build'
+    serve: 'npm run dev'
+    waitTime: 5000
+    urls: |
+      http://localhost:3000
+      http://localhost:3000/foo
