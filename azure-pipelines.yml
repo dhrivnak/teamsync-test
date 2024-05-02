@@ -16,6 +16,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- script: |
+    npm i
+    npm run dev &
+  displayName: "Build and run server"
 - task: StarkAccessibilityAudit@0
   env:
     STARK_REPORT_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/scan-result/:scanId
