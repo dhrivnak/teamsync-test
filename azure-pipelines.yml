@@ -22,3 +22,4 @@ steps:
     echo System.TeamProjectId: $(System.TeamProjectId)
     echo System.DefinitionId: $(System.DefinitionId)
     echo System.CollectionId: $(System.CollectionId)
+    echo System.TeamFoundationCollectionUri: $(System.TeamFoundationCollectionUri)
