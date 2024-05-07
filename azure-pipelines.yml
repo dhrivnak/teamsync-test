@@ -17,4 +17,8 @@ pool:
 
 steps:
 - script: |
-    echo $(Build.Repository.Name)
+    echo Build.Repository.Name: $(Build.Repository.Name)
+    echo System.TeamProject: $(System.TeamProject)
+    echo System.TeamProjectId: $(System.TeamProjectId)
+    echo System.DefinitionId: $(System.DefinitionId)
+    echo System.CollectionId: $(System.CollectionId)
