@@ -17,4 +17,4 @@ pool:
 
 steps:
 - script: |
-    echo ${Build.Repository.Name}
+    echo $(Build.Repository.Name)
