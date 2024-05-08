@@ -22,7 +22,8 @@ steps:
   displayName: "Build and run server"
 - task: StarkAccessibilityAudit@0
   env:
-    STARK_REPORT_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/scan-result/:scanId
+    STARK_REPORT_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/url-scan-result/:scanId
+    STARK_DETAILS_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/scan-details/:scanId
     STARK_COMPLETION_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/end-scan/:scanId
   inputs:
     token: '${{ parameters.token }}'
