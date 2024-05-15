@@ -26,10 +26,6 @@ steps:
 
   # This is where you configure your Stark Accessibility Audit.
   - task: StarkAccessibilityAudit@1
-    env:
-      # These are needed for the task to report scan results back to Stark.
-      STARK_REPORT_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/scan-result/:scanId
-      STARK_COMPLETION_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/end-scan/:scanId
     inputs:
       # [Required] This predefined value will use the token Stark provides when starting the pipeline.
       token: "${{ parameters.token }}"
