@@ -1,14 +1,6 @@
 # Stark Accessibility Audit
 # https://aka.ms/yaml
 
-parameters:
-  # This is used by the Stark web application when it runs the pipeline for you.
-  # The token is provided by Stark automatically, and is needed to send this scan's results back to Stark.
-  - name: token
-    displayName: Stark token
-    type: string
-    default: ''
-
 trigger:
   # This pipeline must be triggered from within the Stark web application to function properly.
   - none
@@ -31,7 +23,7 @@ steps:
       STARK_COMPLETION_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/end-scan/:scanId
     inputs:
       # [Required] This predefined value will use the token Stark provides when starting the pipeline.
-      token: '${{ parameters.token }}'
+      token: 'stark_54d8f790f03945cc95267993cfafdbe7'
 
       # [Required] A list of URLs to be scanned, with each URL on its own line.
       # This value follows YAML conventions for multiline strings.
