@@ -23,7 +23,7 @@ steps:
       STARK_COMPLETION_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/end-scan/:scanId
     inputs:
       # [Required] This predefined value will use the token Stark provides when starting the pipeline.
-      token: 'stark_3cb6ad284e4b4aa9ae32c10db759dec3'
+      token: 'stark_c0f599bd1f36438c80948cc7b9851dae'
 
       # [Required] A list of URLs to be scanned, with each URL on its own line.
       # This value follows YAML conventions for multiline strings.
