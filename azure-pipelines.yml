@@ -31,4 +31,3 @@ steps:
       # NOTE: This is the likely the only value you have to change!
       urls: |
         http://localhost:3000
-        https://www.google.com
