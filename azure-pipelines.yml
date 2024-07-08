@@ -21,11 +21,10 @@ steps:
     inputs:
       # [Required] The Stark token provided when you created your project on the Stark web app.
       # Example: 'stark_705199c1bfc34311b616c92b0748f4d0'
-      token: 'stark_627ee0bca71a4e5fbb3bddc7bfe03106'
+      token: 'stark_c0f599bd1f36438c80948cc7b9851dae'
 
       # [Required] A list of URLs to be scanned, with each URL on its own line.
       # This value follows YAML conventions for multiline strings.
       # NOTE: This is the likely the only value you have to change!
       urls: |
         http://localhost:3000
-        https://www.google.com
