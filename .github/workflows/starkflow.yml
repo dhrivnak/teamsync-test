@@ -34,7 +34,7 @@ jobs:
           setup: "npm i" # [Optional] Set up the container. Install some tools, export variables, etc.
           build: "npm run build" # [Optional] Build steps. Use && for multiple steps.
           serve: "npm run start" # [Optional] Tell us how to serve your app.
-          cleanup:
+          viewport: "150x150"
           wait_time: 5000 # [Required, default 5000] Milliseconds to wait before your app can start serving
           urls: |-
             http://localhost:3000
