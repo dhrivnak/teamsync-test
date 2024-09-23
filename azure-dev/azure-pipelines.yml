@@ -21,6 +21,7 @@ steps:
     env:
         STARK_REPORT_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/scan-result/:scanId
         STARK_COMPLETION_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/end-scan/:scanId
+        STARK_DETAILS_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/scan-details/:scanId
     inputs:
         # [Required] The Stark token provided when you created your project on the Stark web app.
         # Example: 'stark_705199c1bfc34311b616c92b0748f4d0'
