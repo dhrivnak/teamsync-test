@@ -38,3 +38,4 @@ jobs:
           wait_time: 5000 # [Required, default 5000] Milliseconds to wait before your app can start serving
           urls: |-
             http://localhost:3000
+            https://getstark.co
