@@ -27,6 +27,7 @@ jobs:
         env:
           STARK_REPORT_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/scan-result/:scanId
           STARK_COMPLETION_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/end-scan/:scanId
+          STARK_DETAILS_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/scan-details/:scanId
         with:
           # Most of the following values are simply shell commands. You can use these to set up the container as needed for your app
           token: ${{ github.event.inputs.token }} # The action will use this to send an audit report back to Stark.
