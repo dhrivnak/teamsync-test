@@ -17,7 +17,7 @@ steps:
     displayName: 'Build and run server'
 
   # This is where you configure your Stark Accessibility Audit.
-  - task: StarkAccessibilityAudit@1
+  - task: StarkAccessibilityAudit@2
     inputs:
       # [Required] The Stark token provided when you created your project on the Stark web app.
       # Example: 'stark_705199c1bfc34311b616c92b0748f4d0'
