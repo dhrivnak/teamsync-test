@@ -9,11 +9,6 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  # REQUIRED: include this script to set up Playwright, which the Stark Accessibility Audit uses to load your URL(s).
-  # For security, consider pinnning Playwright to a specific version. Example: npm install -g playwright@1.58
-  - script: npx playwright install chromium --no-shell && npx playwright install
-    displayName: 'Install Playwright'
-    
   # This is where you execute the commands needed to build and run your server locally in the background.
   # NOTE: the '&' at the end of the 'npm run dev &' command is needed to ensure the pipeline can continue to the next step.
   - script: |
