@@ -26,7 +26,7 @@ steps:
     inputs:
       # [Required] The Stark token provided when you created your project on the Stark web app.
       # Example: 'stark_705199c1bfc34311b616c92b0748f4d0'
-      token: 'stark_b3e1fdb13ca649d1b9032d929c7eb30d'
+      token: 'stark_2e3fa5263b5e43eda756a400df2cab28'
       
       # [Required] A list of URLs to be scanned, with each URL on its own line.
       # This value follows YAML conventions for multiline strings.
