@@ -23,7 +23,7 @@ jobs:
 
       - name: Audit
         id: stark
-        uses: stark-contrast/accessibility-check-action@0.3.2-beta.0
+        uses: foo/accessibility-check-action@0.3.2-beta.0
         env:
           STARK_REPORT_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/scan-result/:scanId
           STARK_COMPLETION_URL: https://dh-stark.ngrok.dev/api/cli-webhooks/end-scan/:scanId
