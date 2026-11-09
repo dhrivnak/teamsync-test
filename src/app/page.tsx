@@ -16,7 +16,7 @@ export default function Home() {
         </div>
         <div className="buttons">
           <a href="#" className="button w-button">Try TeamSync</a>
-          <a href="#" className="button-2 w-button">Request a demo</a>
+          <a href="#" className="button-2 w-button">Request a demoz</a>
         </div>
       </div>
     </main>
