@@ -24,6 +24,5 @@
   },
   "devDependencies": {
     "@stark-lab-inc/stark-accessibility-react": "^1.0.0",
-    "@stark-lab-inc/stark-accessibility-vue": "^1.0.0"
   }
 }
