@@ -23,7 +23,7 @@ export default function Home() {
             <div className="body">
               With our project management, communication, and file sharing
               tools, you can work together seamlessly from anywhere in the
-              world.
+              world. Foo.
             </div>
           </div>
           <div className="buttons">
