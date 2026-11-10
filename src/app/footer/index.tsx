@@ -59,6 +59,9 @@ export const Footer = () => (
         <a href="#" className="link-7">
           Support
         </a>
+        <a href="#" className="link-7">
+          Support Duplicate
+        </a>
       </div>
       <div className="frame-13899">
         <a href="#" className="link-8">
