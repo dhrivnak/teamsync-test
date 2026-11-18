@@ -51,13 +51,10 @@ export const Footer = () => (
       </div>
       <div className="frame-13898">
         <a href="#" className="link-7">
-          FAQs
-        </a>
-        <a href="#" className="link-7">
-          Blogs
-        </a>
-        <a href="#" className="link-7">
           Support
+        </a>
+        <a href="#" className="link-7">
+          Support 2
         </a>
       </div>
       <div className="frame-13899">
