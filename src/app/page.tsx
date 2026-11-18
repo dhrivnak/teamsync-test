@@ -73,6 +73,22 @@ export default function Home() {
           alt="iPhone showing Teamsync"
           className="illustration-1-1"
         />
+        <img
+          src="https://assets-global.website-files.com/642ad644644c1d199a312e4b/642d8807395e19c98865b100_Illustration-1-1.png"
+          loading="lazy"
+          width="564.5"
+          height="713.5"
+          alt="photo of blue iPhone showing Teamsync"
+          className="illustration-1-1"
+        />
+        <img
+          src="https://assets-global.website-files.com/642ad644644c1d199a312e4b/642d8807395e19c98865b100_Illustration-1-1.png"
+          loading="lazy"
+          width="564.5"
+          height="713.5"
+          alt="picture of iPhone showing Teamsync"
+          className="illustration-1-1"
+        />
       </section>
       <section id="Pricing" className="pricing-2">
         <div className="pricing-3">
