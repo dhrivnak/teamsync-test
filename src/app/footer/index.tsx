@@ -59,7 +59,7 @@ export const Footer = () => (
         <a href="#" className="link-7">
           Support
         </a>
-        <a href="#" className="link-7">
+        <a href="/support-2" className="link-7">
           Support 2
         </a>
       </div>
