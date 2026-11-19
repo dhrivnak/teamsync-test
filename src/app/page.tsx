@@ -70,7 +70,7 @@ export default function Home() {
           loading="lazy"
           width="564.5"
           height="713.5"
-          alt="Picture of an iPhone showing Teamsync"
+          alt="Photo of iPhone showing Teamsync"
           className="illustration-1-1"
         />
       </section>
